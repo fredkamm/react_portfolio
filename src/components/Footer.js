@@ -2,7 +2,10 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div>
-    </div>
+    <footer>
+      <div>
+        <p>Footer goes here</p>
+      </div>
+    </footer>
   );
 }
