@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div>
       <h1>About Me</h1>
-      {/* <img src="../images/profilepicture.png" alt=""></img> */}
+      <img className='profilePic' src="../img/profilepicture.png" alt="profile_picture"/>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
