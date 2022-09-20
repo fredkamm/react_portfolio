@@ -15,8 +15,10 @@
     margin-right: 30%;
 }
 
-#navLinks {
+.navLinks a {
+    display: inline-block;
     color: var(--text-color);
+    padding: 0 5%;
 }
 
 main {
@@ -28,7 +30,6 @@ main {
 
 footer {
     display: flex;
-    border-top: 1px solid black;
     justify-content: center;
     padding: 3%;
 }

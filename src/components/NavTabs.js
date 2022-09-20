@@ -3,9 +3,9 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div class='navBar'>
-      <h1 class='name'>Fred Kamm</h1>
-      <div id='navLinks'>
+    <div className='navBar'>
+      <h1 className='name'>Fred Kamm</h1>
+      <div className='navLinks'>
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
