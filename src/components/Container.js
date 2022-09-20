@@ -5,7 +5,7 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-import '../styles/Navbar.css';
+import '../styles/main.css';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -29,7 +29,9 @@ export default function PortfolioContainer() {
   return (
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <main>
+        {renderPage()}
+      </main>
       <Footer />
     </div>
   );
