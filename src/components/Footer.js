@@ -9,13 +9,13 @@ export default function Footer() {
     <footer>
       <div>
         <a href='https://github.com/fredkamm' >
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faGithub} className='icon'/>
         </a>
         <a href='https://www.linkedin.com/in/fred-kamm-370070244/' >
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon icon={faLinkedin} className='icon' />
         </a>
         <a href='https://docs.google.com/document/d/1cAlCPvA9sBlhrL2ygxDsZ28cbNDNHaPsCl9CnQm82sM/edit?usp=sharing' >
-        <FontAwesomeIcon icon={faStackOverflow} />
+        <FontAwesomeIcon icon={faStackOverflow} className='icon' />
         </a>
       </div>
       <div>
