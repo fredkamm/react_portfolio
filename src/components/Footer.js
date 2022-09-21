@@ -14,7 +14,7 @@ export default function Footer() {
         <a href='https://www.linkedin.com/in/fred-kamm-370070244/' >
         <FontAwesomeIcon icon={faLinkedin} className='icon' />
         </a>
-        <a href='https://docs.google.com/document/d/1cAlCPvA9sBlhrL2ygxDsZ28cbNDNHaPsCl9CnQm82sM/edit?usp=sharing' >
+        <a href='https://meta.stackexchange.com/users/1258937/fredkamm' >
         <FontAwesomeIcon icon={faStackOverflow} className='icon' />
         </a>
       </div>
