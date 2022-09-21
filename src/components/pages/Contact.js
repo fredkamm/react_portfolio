@@ -63,11 +63,6 @@ export default function Contact() {
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Your name</Form.Label>
           <Form.Control
@@ -91,6 +86,11 @@ export default function Contact() {
         <Button variant="primary" type="submit" onClick={handleFormSubmit}>
           Submit
         </Button>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
       </form>
     </div>
   )
