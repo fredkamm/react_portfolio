@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import '../../styles/contact.css';
 
 export default function Contact() {
 
@@ -21,13 +24,13 @@ export default function Contact() {
     } else if (inputType === 'message') {
       setMessage(inputValue);
     }
-    if (!validateEmail(email)){
+    if (!validateEmail(email)) {
       setErrorMessage('Please enter a valid email');
     } else {
       setErrorMessage('')
     }
   }
-  
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -47,34 +50,48 @@ export default function Contact() {
     <div>
       <p>Hello {name}</p>
       <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Fred"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="message"
-        />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="Enter email"
+          />
+          <Form.Text id="formText" className="textMuted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Your name</Form.Label>
+          <Form.Control
+            value={name}
+            name="name"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Enter your name"
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Message</Form.Label>
+          <Form.Control
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Enter your message to me"
+          />
+        </Form.Group>
+        <Button variant="primary" type="submit" onClick={handleFormSubmit}>
+          Submit
+        </Button>
       </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
     </div>
   )
 }

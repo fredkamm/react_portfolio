@@ -1,5 +1,6 @@
 import React from 'react';
 import ProPic from '../../img/profilepicture.png'
+import '../../styles/about.css'
 
 export default function About() {
   return (
