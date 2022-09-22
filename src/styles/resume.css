@@ -2,11 +2,6 @@ h4 a {
     color: white;
 }
 
-.resume {
-    display: flex;
-    align-content: center;
-}
-
 span {
     font-size: 15px;
     font-style: italic;

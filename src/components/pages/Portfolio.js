@@ -2,12 +2,13 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-import AnimeList from '../../img/AnimeList.png'
+// import AnimeList from '../../img/AnimeList.png'
 import AnimeBlog from '../../img/AnimeBlog.png'
 import WeatherDash from '../../img/Weather.png'
 import NoteTaker from '../../img/NoteTaker.png'
 import Password from '../../img/PasswordGen.png'
 import Scheduler from '../../img/scheduler.png'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/portfolio.css'
 
@@ -15,7 +16,7 @@ export default function Home() {
 
   const cardInfo = [
     {
-      image: { AnimeList },
+      image: '../../img/AnimeList.png' ,
       title: 'Anime List',
       text: 'HTML | Bulma | JS | APIs',
       link: 'https://fredkamm.github.io/Anime-List/'
@@ -56,7 +57,7 @@ export default function Home() {
     return (
       <div className='box'>
         <Card style={{ width: '18rem' }} key={index} className='box'>
-          <Card.Img variant="top" src={card.image} />
+          <Card.Img variant="top" src={require('../../img/AnimeList.png')} />
           <Card.Body className='cardBody'>
             <Card.Title>{card.title}</Card.Title>
             <Card.Text>
