@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.3f48bce1.css",
-    "main.js": "/react_portfolio/static/js/main.9adb59b1.js",
+    "main.css": "/react_portfolio/static/css/main.808b1774.css",
+    "main.js": "/react_portfolio/static/js/main.f134296c.js",
     "static/media/profilepicture.png": "/react_portfolio/static/media/profilepicture.09dc082ba7de84aaf300.png",
     "static/media/AnimeBlog.png": "/react_portfolio/static/media/AnimeBlog.a5be12acad34413b524c.png",
     "static/media/AnimeList.png": "/react_portfolio/static/media/AnimeList.ac37265ea8d3f8f80933.png",
@@ -10,11 +10,11 @@
     "static/media/NoteTaker.png": "/react_portfolio/static/media/NoteTaker.f6f01f68f1614c5046b5.png",
     "static/media/PasswordGen.png": "/react_portfolio/static/media/PasswordGen.45da87b0f1a5165da5d3.png",
     "index.html": "/react_portfolio/index.html",
-    "main.3f48bce1.css.map": "/react_portfolio/static/css/main.3f48bce1.css.map",
-    "main.9adb59b1.js.map": "/react_portfolio/static/js/main.9adb59b1.js.map"
+    "main.808b1774.css.map": "/react_portfolio/static/css/main.808b1774.css.map",
+    "main.f134296c.js.map": "/react_portfolio/static/js/main.f134296c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f48bce1.css",
-    "static/js/main.9adb59b1.js"
+    "static/css/main.808b1774.css",
+    "static/js/main.f134296c.js"
   ]
 }

@@ -48,7 +48,7 @@ export default function Contact() {
 
   return (
     <div>
-      <p>Hello {name}</p>
+      <h4>Hello {name}</h4>
       <form className="form">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -88,7 +88,7 @@ export default function Contact() {
         </Button>
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <h4 className="error-text">{errorMessage}</h4>
           </div>
         )}
       </form>

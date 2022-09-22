@@ -1,3 +1,28 @@
+# React_Portfolio
+
+# Description
+
+**STILL A WORK IN PROGESS**
+
+This is my profession profolio that i will be using for marketing myself. This portfolio is created using react and bootstrap. 
+
+# Usage
+
+  Sucessfully deployed: https://fredkamm.github.io/react_portfolio/ 
+
+  md![alt-text](./src/img/Screen%20Shot%202022-09-21%20at%208.05.35%20PM.png)
+
+# Credit
+
+Used FontAwesome for the icons in the footer
+
+  # Questions
+
+  ### Any questions please contact me via:
+  ### Github: https://github.com/fredkamm
+  ### OR
+  ### Email: fred.kamm95@gmail.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

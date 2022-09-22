@@ -10,15 +10,15 @@ export default function Blog() {
         <h3>Education</h3>
         <li>
           <h4>University of Pennsylvania  <span>- Certification - Full-Stack Web Developer</span></h4>
-          <p>July 22' - October 22'</p>
+          <p className='dates'>July 22' - October 22'</p>
         </li>
         <li>
           <h4>Bucks County Community College  <span>- Certification - Web Design</span></h4>
-          <p>July 20' - May 22'</p>
+          <p className='dates'>July 20' - May 22'</p>
         </li>
         <li>
           <h4>East Stroudsburg University  <span>- B.S. - Business Management</span></h4>
-          <p>July 20' - May 22'</p>
+          <p className='dates'>July 20' - May 22'</p>
         </li>
       </ul>
       <ul>
