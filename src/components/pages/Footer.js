@@ -4,13 +4,13 @@ import React from 'react';
 import { social } from '../../data';
 
 // import logo
-import Logo from '../../assets/img/logo.svg';
+import Logo from '../../assets/img/logo(white).png';
 
 const Footer = () => {
   return (
-    <footer className='bg-tertiary py-12'>
+    <footer className='bg-tertiary'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between'>
+        <div className='flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between md:space-y-6'>
           <div className='flex space-x-6 items-center justify-center'>
             {social.map((item, index) => {
               const { href, icon } = item;
@@ -22,7 +22,7 @@ const Footer = () => {
             })}
           </div>
           <div>
-            <img src={Logo} alt='' />
+            <img className='h-[250px]' src={Logo} alt='' />
           </div>
           <p className='text-paragraph opacity-80 text-[15px]'>
             &copy; 2022 Fred Kamm. All rights reserved.
