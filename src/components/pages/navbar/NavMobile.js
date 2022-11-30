@@ -79,6 +79,7 @@ const NavMobile = () => {
             <li key={idx} className='mb-8'>
               <Link
                 to={item.href}
+                onClick={() => setIsOpen(false)}
                 smooth={true}
                 duration={500}
                 offset={-70}

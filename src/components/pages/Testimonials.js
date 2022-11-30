@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-// import components
+// import slider helper
 import TestiSlider from '../helpers/TestiSlider';
 
 const Testimonials = () => {
