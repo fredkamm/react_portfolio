@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 // import data
-import { projectsData } from '../data';
-import { projectsNav } from '../data';
+import { projectsData } from '../../../data';
+import { projectsNav } from '../../../data';
 
 // import components
 import Project from './Project';

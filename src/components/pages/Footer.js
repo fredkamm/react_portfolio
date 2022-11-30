@@ -1,10 +1,10 @@
 import React from 'react';
 
 // import social data
-import { social } from '../data';
+import { social } from '../../data';
 
 // import logo
-import Logo from '../assets/img/logo.svg';
+import Logo from '../../assets/img/logo.svg';
 
 const Footer = () => {
   return (

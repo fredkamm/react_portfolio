@@ -1,17 +1,17 @@
 import React from 'react';
 
 // import components
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Brands from './components/Brands';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Testimonials from './components/Testimonials';
-import BackTopBtn from './components/BackTopBtn';
+import Header from './components/pages/Header';
+import Hero from './components/pages/Hero';
+import Brands from './components/pages/Brands';
+import About from './components/pages/About';
+import Portfolio from './components/pages/projects/Portfolio';
+import Skills from './components/pages/Skills';
+import Services from './components/pages/Services';
+import Contact from './components/pages/Contact';
+import Footer from './components/pages/Footer';
+import Testimonials from './components/pages/Testimonials';
+import BackTopBtn from './components/helpers/BackTopBtn';
 
 const App = () => {
   return (

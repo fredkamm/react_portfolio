@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 // import components
-import TestiSlider from './TestiSlider';
+import TestiSlider from '../helpers/TestiSlider';
 
 const Testimonials = () => {
 

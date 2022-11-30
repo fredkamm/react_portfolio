@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from 'react';
 
 // import components
-import Logo from '../assets/img/logo.svg';
-import Nav from '../components/Nav';
-import NavMobile from '../components/NavMobile';
-import Socials from './Socials';
+import Logo from '../../assets/img/logo.svg';
+import Nav from '../../components/pages/navbar/Nav';
+import NavMobile from './navbar/NavMobile';
+import Socials from '../helpers/Socials';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
