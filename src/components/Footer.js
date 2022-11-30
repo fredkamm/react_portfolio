@@ -1,31 +1,36 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 
-export default function Footer() {
+// import social data
+import { social } from '../data';
+
+// import logo
+import Logo from '../assets/img/logo.svg';
+
+const Footer = () => {
   return (
-    <footer>
-      <div>
-        <a href='https://github.com/fredkamm' >
-          <FontAwesomeIcon icon={faGithub} className='icon'/>
-        </a>
-        <a href='https://www.linkedin.com/in/fred-kamm-370070244/' >
-        <FontAwesomeIcon icon={faLinkedin} className='icon' />
-        </a>
-        <a href='https://meta.stackexchange.com/users/1258937/fredkamm' >
-        <FontAwesomeIcon icon={faStackOverflow} className='icon' />
-        </a>
+    <footer className='bg-tertiary py-12'>
+      <div className='container mx-auto'>
+        <div className='flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between'>
+          <div className='flex space-x-6 items-center justify-center'>
+            {social.map((item, index) => {
+              const { href, icon } = item;
+              return (
+                <a className='text-accent text-base' href={href} key={index}>
+                  {icon}
+                </a>
+              );
+            })}
+          </div>
+          <div>
+            <img src={Logo} alt='' />
+          </div>
+          <p className='text-paragraph opacity-80 text-[15px]'>
+            &copy; 2022 Cristian Mihai. All rights reserved.
+          </p>
+        </div>
       </div>
-      <div>
-        © 2022 Copyright:
-        <a href="https://github.com/fredkamm/react_portfolio">
-          {" "}
-          Fred Kamm
-        </a>
-      </div>
-
     </footer>
   );
-}
+};
+
+export default Footer;
