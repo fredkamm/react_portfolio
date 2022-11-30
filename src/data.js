@@ -15,6 +15,7 @@ import {
 // companies icons
 import FreelancerBrandIcon from "./assets/img/brands/freelancer.png";
 import UpworkBrandIcon from "./assets/img/brands/upwork.png";
+import FiverrBrandIcon from "./assets/img/brands/fiverr.png";
 
 // projects images
 import Project1 from "./assets/img/projects/p1.webp";
@@ -25,11 +26,13 @@ import Project5 from "./assets/img/projects/p5.webp";
 import Project6 from "./assets/img/projects/p6.webp";
 
 // skills images
-import HTML from "./assets/img/skills/html5.png";
-import CSS from "./assets/img/skills/css3.png";
-import JavaScript from "./assets/img/skills/js.png";
-import Reactjs from "./assets/img/skills/reactjs.png";
-import Nodejs from "./assets/img/skills/nodejs.png";
+import HTML from "./assets/img/skills/html.png";
+import CSS from "./assets/img/skills/css.png";
+import JavaScript from "./assets/img/skills/javascript.png";
+import Mongo from "./assets/img/skills/mongo.png";
+import Reactjs from "./assets/img/skills/react.png";
+import Nodejs from "./assets/img/skills/node.png";
+import Tailwind from "./assets/img/skills/tailwind.png";
 
 
 // testimonial images
@@ -95,6 +98,10 @@ export const brands = [
     img: UpworkBrandIcon,
     href: "",
   },
+  {
+    img: FiverrBrandIcon,
+    href: "",
+  },
 ];
 
 // projects
@@ -156,7 +163,7 @@ export const projectsNav = [
   },
 ];
 
-// skill
+// skills
 export const skills = [
   {
     image: HTML,
@@ -171,7 +178,13 @@ export const skills = [
     image: Reactjs,
   },
   {
+    image: Tailwind,
+  },
+  {
     image: Nodejs,
+  },
+  {
+    image: Mongo,
   },
 ];
 
