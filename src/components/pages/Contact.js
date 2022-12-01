@@ -26,7 +26,7 @@ const Contact = () => {
             {contact.map((item, index) => {
               const { icon, title, subtitle, description } = item;
               return (
-                <div className='flex flex-col lg:flex-row gap-x-4' key={index}>
+                <div className='flex flex-col lg:flex-row gap-x-4 sm:flex-row' key={index}>
                   <div className='text-accent rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
                     {icon}
                   </div>

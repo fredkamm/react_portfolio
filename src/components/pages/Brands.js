@@ -7,7 +7,7 @@ const Brands = () => {
   return (
     <section className='min-h-[146px] bg-tertiary flex items-center'>
       <div
-        className='container mx-auto flex md: self-center items-center flex-wrap justify-evenly'
+        className='container mx-auto flex md: self-center items-center flex-wrap justify-around'
       >
         {brands.map((brand, idx) => {
           return (

@@ -13,15 +13,14 @@ import {
 } from "react-icons/fi";
 
 // companies icons
-import FreelancerBrandIcon from "./assets/img/brands/freelancer.png";
 import UpworkBrandIcon from "./assets/img/brands/upwork.png";
 import FiverrBrandIcon from "./assets/img/brands/fiverr.png";
 
 // projects images
-import Project1 from "./assets/img/projects/p1.webp";
-import Project2 from "./assets/img/projects/p2.webp";
-import Project3 from "./assets/img/projects/p3.webp";
-import Project4 from "./assets/img/projects/p4.webp";
+import WeatherApp from "./assets/img/projects/Weather.png";
+import ChatApp from "./assets/img/projects/ChatApp.png";
+import Password from "./assets/img/projects/Password.png";
+import AnimeList from "./assets/img/projects/AnimeList.png";
 import Project5 from "./assets/img/projects/p5.webp";
 import Project6 from "./assets/img/projects/p6.webp";
 
@@ -36,8 +35,8 @@ import Tailwind from "./assets/img/skills/tailwind.png";
 
 
 // testimonial images
-import TestiImage1 from "./assets/img/testimonials/testimonial-1.webp";
-import TestiImage2 from "./assets/img/testimonials/testimonial-2.webp";
+import RyanDeLong from "./assets/img/testimonials/RyanDeLong.png";
+import JoeLutz from "./assets/img/testimonials/Lutz.png";
 import TestiImage3 from "./assets/img/testimonials/testimonial-3.webp";
 
 // navigation
@@ -91,16 +90,12 @@ export const social = [
 // companies
 export const brands = [
   {
-    img: FreelancerBrandIcon,
-    href: "",
-  },
-  {
     img: UpworkBrandIcon,
-    href: "",
+    href: "https://www.upwork.com/freelancers/~0118d13665becb65b5?viewMode=1",
   },
   {
     img: FiverrBrandIcon,
-    href: "",
+    href: "https://www.fiverr.com/fred_kamm?up_rollout=true",
   },
 ];
 
@@ -108,30 +103,34 @@ export const brands = [
 export const projectsData = [
   {
     id: "1",
-    image: Project1,
-    href:"",
-    name: "project name 1",
+    image: WeatherApp,
+    href:"https://fredkammweatherapp.netlify.app/",
+    name: "Weather App",
+    description:"A basic weather application that retrieves information about the local weather in any city in the world.",
     category: "UI/UX design",
   },
   {
     id: "2",
-    image: Project2,
-    href:"",
-    name: "project name 2",
+    image: ChatApp,
+    href:"https://chat-app-a9849.firebaseapp.com/",
+    name: "The Chat App",
+    description:"With the use of Firebase as the database, users can sign in with their Google accounts through a messaging app.",
     category: "web development",
   },
   {
     id: "3",
-    image: Project3,
-    href:"",
-    name: "project name 3",
-    category: "UI/UX design",
+    image: Password,
+    href:"https://fredspasswordgenerator.netlify.app/",
+    name: "Password Generator",
+    description:"An easy to use password generator that will quickly generate a safe and secure password for you.",
+    category: "web development",
   },
   {
     id: "4",
-    image: Project4,
-    href:"",
-    name: "project name 4",
+    image: AnimeList,
+    href:"https://aaansari123.github.io/Anime-List/",
+    name: "Anime List",
+    description:"This application allows users to search for any anime they want and display important information about it so that users can determine if it is worth watching.",
     category: "web development",
   },
   {
@@ -139,6 +138,7 @@ export const projectsData = [
     image: Project5,
     href:"",
     name: "project name 5",
+    description:"",
     category: "web development",
   },
   {
@@ -146,6 +146,7 @@ export const projectsData = [
     image: Project6,
     href:"",
     name: "project name 6",
+    description:"",
     category: "web development",
   },
 ];
@@ -219,18 +220,18 @@ export const services = [
 // testimonials
 export const testimonials = [
   {
-    authorImg: TestiImage1,
+    authorImg: RyanDeLong,
     authorText:
       "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-    authorName: "Olivia Doe",
-    authorPosition: "Head of Design, Google",
+    authorName: "Ryan DeLong",
+    authorPosition: "General Manager, Outdoor Living Supply",
   },
   {
-    authorImg: TestiImage2,
+    authorImg: JoeLutz,
     authorText:
       "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-    authorName: "Olivia Doe",
-    authorPosition: "Head of Design, Google",
+    authorName: "Joseph Lutz",
+    authorPosition: "General Dentist, Philadelphia",
   },
   {
     authorImg: TestiImage3,

@@ -30,10 +30,10 @@ module.exports = {
           secondary: '#1C1D24',
           tertiary: '#131419',
           accent: {
-            DEFAULT: '#ac6b34',
-            hover: '#925a2b',
+            DEFAULT: '#4d95a8',
+            hover: '#2d545e',
           },
-          paragraph: '#878e99',
+          paragraph: '#949fb0',
         },
       },
     },
