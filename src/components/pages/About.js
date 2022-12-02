@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 // import img
 import Image from "../../assets/img/profilepicture.png";
@@ -34,9 +36,14 @@ const About = () => {
                 audience for an impactful user experience.
               </p>
             </div>
-            <button className="btn btn-md bg-accent hover:bg-secondary-hover transition-all">
-              Contact me
-            </button>
+            <Link to="contact" smooth={true} duration={800}>
+              <button className="btn group btn-md bg-accent hover:bg-secondary-hover transition-all">
+                Contact me
+                <span className="group-hover:rotate-90 duration-300">
+                  <HiArrowNarrowRight className="ml-3" />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

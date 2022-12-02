@@ -2,12 +2,12 @@
 import {
   FiLinkedin,
   FiGithub,
-  FiYoutube,
+  FiTwitch,
   FiInstagram,
   FiLayout,
   FiSettings,
   FiPenTool,
-  FiTag,
+  FiMousePointer,
   FiMail,
   FiMapPin,
 } from "react-icons/fi";
@@ -21,8 +21,7 @@ import WeatherApp from "./assets/img/projects/Weather.png";
 import ChatApp from "./assets/img/projects/ChatApp.png";
 import Password from "./assets/img/projects/Password.png";
 import AnimeList from "./assets/img/projects/AnimeList.png";
-import Project5 from "./assets/img/projects/p5.webp";
-import Project6 from "./assets/img/projects/p6.webp";
+import ComingSoon from "./assets/img/projects/ComingSoon.png";
 
 // skills images
 import HTML from "./assets/img/skills/html.png";
@@ -37,7 +36,7 @@ import Tailwind from "./assets/img/skills/tailwind.png";
 // testimonial images
 import RyanDeLong from "./assets/img/testimonials/RyanDeLong.png";
 import JoeLutz from "./assets/img/testimonials/Lutz.png";
-import TestiImage3 from "./assets/img/testimonials/testimonial-3.webp";
+// import TestiImage3 from "./assets/img/testimonials/testimonial-3.webp";
 
 // navigation
 export const navigation = [
@@ -78,7 +77,7 @@ export const social = [
     href: "https://github.com/fredkamm",
   },
   {
-    icon: <FiYoutube />,
+    icon: <FiTwitch />,
     href: "",
   },
   {
@@ -107,15 +106,15 @@ export const projectsData = [
     href:"https://fredkammweatherapp.netlify.app/",
     name: "Weather App",
     description:"A basic weather application that retrieves information about the local weather in any city in the world.",
-    category: "UI/UX design",
+    category: "Front End Projects",
   },
   {
     id: "2",
     image: ChatApp,
     href:"https://chat-app-a9849.firebaseapp.com/",
     name: "The Chat App",
-    description:"With the use of Firebase as the database, users can sign in with their Google accounts through a messaging app.",
-    category: "web development",
+    description:"With the use of Firebase as the database, users can sign in with their Google accounts through this messaging app.",
+    category: "Full-Stack Projects",
   },
   {
     id: "3",
@@ -123,7 +122,7 @@ export const projectsData = [
     href:"https://fredspasswordgenerator.netlify.app/",
     name: "Password Generator",
     description:"An easy to use password generator that will quickly generate a safe and secure password for you.",
-    category: "web development",
+    category: "Front End Projects",
   },
   {
     id: "4",
@@ -131,23 +130,23 @@ export const projectsData = [
     href:"https://aaansari123.github.io/Anime-List/",
     name: "Anime List",
     description:"This application allows users to search for any anime they want and display important information about it so that users can determine if it is worth watching.",
-    category: "web development",
+    category: "Front End Projects",
   },
   {
     id: "5",
-    image: Project5,
+    image: ComingSoon,
     href:"",
-    name: "project name 5",
+    name: "Coming Soon!",
     description:"",
-    category: "web development",
+    category: "Full-Stack Projects",
   },
   {
     id: "6",
-    image: Project6,
+    image: ComingSoon,
     href:"",
-    name: "project name 6",
+    name: "Coming Soon!",
     description:"",
-    category: "web development",
+    category: "Full-Stack Projects",
   },
 ];
 
@@ -157,10 +156,10 @@ export const projectsNav = [
     name: "all",
   },
   {
-    name: "UI/UX Design",
+    name: "Full-Stack Projects",
   },
   {
-    name: "web development",
+    name: "Front End Projects",
   },
 ];
 
@@ -192,26 +191,26 @@ export const skills = [
 // services
 export const services = [
   {
-    icon: <FiLayout />,
-    name: "Web Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
-  },
-  {
     icon: <FiSettings />,
     name: "Web Development",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
   {
-    icon: <FiPenTool />,
-    name: "Branding",
+    icon: <FiLayout />,
+    name: "Web Design",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
   {
-    icon: <FiTag />,
-    name: "SEO",
+    icon: <FiPenTool />,
+    name: "Logo Design",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+  },
+  {
+    icon: <FiMousePointer />,
+    name: "Resume Design",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
@@ -222,23 +221,23 @@ export const testimonials = [
   {
     authorImg: RyanDeLong,
     authorText:
-      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+      "He worked closely with me every step of the way, and I appreciated his creative input that exceeded my expectations",
     authorName: "Ryan DeLong",
     authorPosition: "General Manager, Outdoor Living Supply",
   },
   {
     authorImg: JoeLutz,
     authorText:
-      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
+      "It is so nice to have someone so responsive and quick to get back to me if I have questions or need to make changes.",
     authorName: "Joseph Lutz",
     authorPosition: "General Dentist, Philadelphia",
   },
   {
-    authorImg: TestiImage3,
+    authorImg: ComingSoon,
     authorText:
-      "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-    authorName: "Olivia Doe",
-    authorPosition: "Head of Design, Google",
+      "Design is one of my favorite aspects of their work, as is their willingness to dig deep into understanding my business and who I need to reach..",
+    authorName: "Philip Kistner",
+    authorPosition: "Sales Representative, Schnoll Painting",
   },
 ];
 

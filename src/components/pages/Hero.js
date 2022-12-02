@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Hero = () => {
   return (
@@ -20,9 +22,14 @@ const Hero = () => {
               development. Committed to building and designing amazing user
               experiences.
             </p>
-            <button className="btn btn-md bg-accent hover:bg-secondary-hover md:btn-lg transition-all">
-              Work with me
-            </button>
+            <Link to="portfolio" smooth={true} duration={800}>
+              <button className="btn group btn-md bg-accent hover:bg-secondary-hover md:btn-lg transition-all">
+                View my work
+                <span className="group-hover:rotate-90 duration-300">
+                  <HiArrowNarrowRight className="ml-3" />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

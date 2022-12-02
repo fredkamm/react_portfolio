@@ -8,7 +8,7 @@ const Skills = () => {
     <section className='bg-tertiary py-12'>
       <div className='container mx-auto'>
         <div
-          className='flex grid-cols-8 md:grid-flow-col'
+          className='flex justify-around md:grid-flow-col'
         >
           {skills.map((skill, index) => {
             return (
@@ -16,7 +16,7 @@ const Skills = () => {
                 className='flex items-center justify-center'
                 key={index}
               >
-                <img className='lg:h-20' src={skill.image} alt='' />
+                <img className='lg:h-20 sm:max-h-12' src={skill.image} alt='' />
               </div>
             );
           })}

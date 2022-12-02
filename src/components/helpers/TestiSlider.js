@@ -46,7 +46,7 @@ const TestiSlider = () => {
                   className='flex flex-col max-w-3xl'
                 >
                   <h5 className='font-body text-2xl mb-8 italic font-normal'>
-                    {authorText}
+                    " {authorText} "
                   </h5>
                   <div>
                     <p className='text-lg text-accent'>{authorName}</p>
