@@ -7,7 +7,7 @@ import {
   FiLayout,
   FiSettings,
   FiPenTool,
-  FiMousePointer,
+  // FiMousePointer,
   FiMail,
   FiMapPin,
 } from "react-icons/fi";
@@ -194,26 +194,26 @@ export const services = [
     icon: <FiSettings />,
     name: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      "I thrive on bringing ideas to life using React.JS and delivering eye-catching results ahead of schedule.",
   },
   {
     icon: <FiLayout />,
-    name: "Web Design",
+    name: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      "I designing brand identities, mobile app UI & UX, design systems, websites and graphic design for advertising",
   },
   {
     icon: <FiPenTool />,
     name: "Logo Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      "My logos are designed to communicate instantly, at a glance, with the people you want to reach. A logo represents you, but it is intended for your target audience.",
   },
-  {
-    icon: <FiMousePointer />,
-    name: "Resume Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
-  },
+  // {
+  //   icon: <FiMousePointer />,
+  //   name: "Resume Design",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+  // },
 ];
 
 // testimonials
