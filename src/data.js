@@ -22,6 +22,7 @@ import ChatApp from "./assets/img/projects/ChatApp.png";
 import Password from "./assets/img/projects/Password.png";
 import AnimeList from "./assets/img/projects/AnimeList.png";
 import ComingSoon from "./assets/img/projects/ComingSoon.png";
+import TicTacToe from "./assets/img/projects/TicTacToe.png";
 
 // skills images
 import HTML from "./assets/img/skills/html.png";
@@ -102,6 +103,14 @@ export const brands = [
 export const projectsData = [
   {
     id: "1",
+    image: TicTacToe,
+    href:"https://freds-tic-tac-toe.netlify.app/",
+    name: "Coming Soon!",
+    description:"A simple game of Tic-Tac-Toe",
+    category: "Front End Projects",
+  },
+  {
+    id: "2",
     image: WeatherApp,
     href:"https://fredkammweatherapp.netlify.app/",
     name: "Weather App",
@@ -109,7 +118,7 @@ export const projectsData = [
     category: "Front End Projects",
   },
   {
-    id: "2",
+    id: "3",
     image: ChatApp,
     href:"https://chat-app-a9849.firebaseapp.com/",
     name: "The Chat App",
@@ -117,7 +126,7 @@ export const projectsData = [
     category: "Full-Stack Projects",
   },
   {
-    id: "3",
+    id: "4",
     image: Password,
     href:"https://fredspasswordgenerator.netlify.app/",
     name: "Password Generator",
@@ -125,20 +134,12 @@ export const projectsData = [
     category: "Front End Projects",
   },
   {
-    id: "4",
+    id: "5",
     image: AnimeList,
     href:"https://aaansari123.github.io/Anime-List/",
     name: "Anime List",
     description:"This application allows users to search for any anime they want and display important information about it so that users can determine if it is worth watching.",
     category: "Front End Projects",
-  },
-  {
-    id: "5",
-    image: ComingSoon,
-    href:"",
-    name: "Coming Soon!",
-    description:"",
-    category: "Full-Stack Projects",
   },
   {
     id: "6",
