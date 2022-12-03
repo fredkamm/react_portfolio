@@ -37,7 +37,7 @@ import Tailwind from "./assets/img/skills/tailwind.png";
 // testimonial images
 import RyanDeLong from "./assets/img/testimonials/RyanDeLong.png";
 import JoeLutz from "./assets/img/testimonials/Lutz.png";
-// import TestiImage3 from "./assets/img/testimonials/testimonial-3.webp";
+import JeffLedford from "./assets/img/testimonials/Jeff.png";
 
 // navigation
 export const navigation = [
@@ -222,7 +222,7 @@ export const testimonials = [
   {
     authorImg: RyanDeLong,
     authorText:
-      "He worked closely with me every step of the way, and I appreciated his creative input that exceeded my expectations",
+      "Fred worked closely with me every step of the way, and I appreciated his creative input that exceeded my expectations",
     authorName: "Ryan DeLong",
     authorPosition: "General Manager, Outdoor Living Supply",
   },
@@ -234,11 +234,11 @@ export const testimonials = [
     authorPosition: "General Dentist, Philadelphia",
   },
   {
-    authorImg: ComingSoon,
+    authorImg: JeffLedford,
     authorText:
-      "Design is one of my favorite aspects of their work, as is their willingness to dig deep into understanding my business and who I need to reach..",
-    authorName: "Philip Kistner",
-    authorPosition: "Sales Representative, Schnoll Painting",
+      "Design is one of my favorite aspects of Fred's work, as is his willingness to dig deep into understanding my business and who I need to reach..",
+    authorName: "Jeffrey Ledford",
+    authorPosition: "Market Advisor, Sundae",
   },
 ];
 
