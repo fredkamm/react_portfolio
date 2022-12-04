@@ -105,7 +105,7 @@ export const projectsData = [
     id: "1",
     image: TicTacToe,
     href:"https://freds-tic-tac-toe.netlify.app/",
-    name: "Coming Soon!",
+    name: "Tic Tac Toe",
     description:"A simple game of Tic-Tac-Toe",
     category: "Front End Projects",
   },
