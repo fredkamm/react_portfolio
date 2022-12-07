@@ -17,7 +17,7 @@ import UpworkBrandIcon from "./assets/img/brands/upwork.png";
 import FiverrBrandIcon from "./assets/img/brands/fiverr.png";
 
 // projects images
-import WeatherApp from "./assets/img/projects/Weather.png";
+// import WeatherApp from "./assets/img/projects/Weather.png";
 import ChatApp from "./assets/img/projects/ChatApp.png";
 import Password from "./assets/img/projects/Password.png";
 import AnimeList from "./assets/img/projects/AnimeList.png";
@@ -113,7 +113,7 @@ export const projectsData = [
   {
     id: "2",
     image: Todo,
-    href:"https://fredkammweatherapp.netlify.app/",
+    href:"https://fredstodoapp.netlify.app/",
     name: "Todo App",
     description:"This is a simple todo list used to keep track of things that i need to accomplish. This todo list has the ability to edit and delete items on the list. And it also crosses of the item on the list when i finish doing that objective.",
     category: "Front End Projects",
