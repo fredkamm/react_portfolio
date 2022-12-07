@@ -115,7 +115,7 @@ export const projectsData = [
     image: Todo,
     href:"https://fredstodoapp.netlify.app/",
     name: "Todo App",
-    description:"This is a simple todo list used to keep track of things that i need to accomplish. This todo list has the ability to edit and delete items on the list. And it also crosses of the item on the list when i finish doing that objective.",
+    description:"This is a simple todo list used to keep track of things that i need to accomplish.",
     category: "Front End Projects",
   },
   {
