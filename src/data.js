@@ -20,10 +20,11 @@ import FiverrBrandIcon from "./assets/img/brands/fiverr.png";
 // import WeatherApp from "./assets/img/projects/Weather.png";
 import ChatApp from "./assets/img/projects/ChatApp.png";
 import Password from "./assets/img/projects/Password.png";
-import AnimeList from "./assets/img/projects/AnimeList.png";
+// import AnimeList from "./assets/img/projects/AnimeList.png";
 import ComingSoon from "./assets/img/projects/ComingSoon.png";
 import TicTacToe from "./assets/img/projects/TicTacToe.png";
 import Todo from "./assets/img/projects/Todo.png";
+import DogWalk from "./assets/img/projects/dogWalking.png";
 
 // skills images
 import HTML from "./assets/img/skills/html.png";
@@ -112,6 +113,14 @@ export const projectsData = [
   },
   {
     id: "2",
+    image: DogWalk,
+    href:"https://thedogwalker.netlify.app/",
+    name: "Dog Walking Services",
+    description:"This is a landing page made for a client who has their own dog walking service. Allowing them to promote their services via the web",
+    category: "Front End Projects",
+  },
+  {
+    id: "3",
     image: Todo,
     href:"https://fredstodoapp.netlify.app/",
     name: "Todo App",
@@ -119,7 +128,7 @@ export const projectsData = [
     category: "Front End Projects",
   },
   {
-    id: "3",
+    id: "4",
     image: ChatApp,
     href:"https://chat-app-a9849.firebaseapp.com/",
     name: "The Chat App",
@@ -127,19 +136,11 @@ export const projectsData = [
     category: "Full-Stack Projects",
   },
   {
-    id: "4",
+    id: "5",
     image: Password,
     href:"https://fredspasswordgenerator.netlify.app/",
     name: "Password Generator",
     description:"An easy to use password generator that will quickly generate a safe and secure password for you.",
-    category: "Front End Projects",
-  },
-  {
-    id: "5",
-    image: AnimeList,
-    href:"https://aaansari123.github.io/Anime-List/",
-    name: "Anime List",
-    description:"This application allows users to search for any anime they want and display important information about it so that users can determine if it is worth watching.",
     category: "Front End Projects",
   },
   {
@@ -152,7 +153,7 @@ export const projectsData = [
   },
 ];
 
-// projects
+// projects nav bar
 export const projectsNav = [
   {
     name: "all",
