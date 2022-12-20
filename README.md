@@ -2,16 +2,16 @@
 
 This is my personal portfolio using react and tailwind. This portfolio is where i will be displaying my skills from previous projects to employers. This will be update frequently to show off some of my personal favorite projects.
 
-
 # Inspiration
 
-I wanted to create a professional portfolio that i can show to employers. I specifically wanted to create this using React.js so that i can showcase some of my react skills to people that visit my site. 
+I wanted to create a professional portfolio that i can show to employers. I specifically wanted to create this using React.js so that i can showcase some of my react skills to people that visit my site.
 
 Currently, I am updating the projects section of my portfolio that showcases some of my favorite passion projects. Eventually, i would like to upgrade this portfolio once i discover some new tricks to improve my react skills.
 
 # Usage
+
 <div>
-    <a href="https://fredkamm.github.io/react_portfolio/">
+    <a href="https://fredkamm.netlify.app/">
         Visit my site here!
     </a>
 </div>
