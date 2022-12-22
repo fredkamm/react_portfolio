@@ -3,7 +3,6 @@ import {
   FiLinkedin,
   FiGithub,
   FiTwitch,
-  FiInstagram,
   FiLayout,
   FiSettings,
   FiPenTool,
@@ -11,6 +10,8 @@ import {
   FiMail,
   FiMapPin,
 } from "react-icons/fi";
+
+import { SiUpwork } from "react-icons/si"
 
 // companies icons
 import UpworkBrandIcon from "./assets/img/brands/upwork.png";
@@ -80,11 +81,11 @@ export const social = [
     href: "https://github.com/fredkamm",
   },
   {
-    icon: <FiTwitch />,
-    href: "",
+    icon: <SiUpwork />,
+    href: "https://www.upwork.com/freelancers/~0118d13665becb65b5",
   },
   {
-    icon: <FiInstagram />,
+    icon: <FiTwitch />,
     href: "",
   },
 ];
