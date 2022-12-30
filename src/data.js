@@ -109,7 +109,7 @@ export const projectsData = [
     image: TicTacToe,
     href:"https://freds-tic-tac-toe.netlify.app/",
     name: "Tic Tac Toe",
-    description:"A simple game of Tic-Tac-Toe",
+    description:"Play a game of Tic-Tac-Toe!",
     category: "Front End Projects",
   },
   {
@@ -118,7 +118,7 @@ export const projectsData = [
     href:"https://thedogwalker.netlify.app/",
     name: "Dog Walking Services",
     description:"This is a landing page made for a client who has their own dog walking service. Allowing them to promote their services via the web",
-    category: "Front End Projects",
+    category: "Landing Page",
   },
   {
     id: "3",
@@ -164,6 +164,9 @@ export const projectsNav = [
   },
   {
     name: "Front End Projects",
+  },
+  {
+    name:"Landing Page",
   },
 ];
 
