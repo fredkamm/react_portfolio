@@ -22,10 +22,11 @@ import FiverrBrandIcon from "./assets/img/brands/fiverr.png";
 import ChatApp from "./assets/img/projects/ChatApp.png";
 import Password from "./assets/img/projects/Password.png";
 // import AnimeList from "./assets/img/projects/AnimeList.png";
-import ComingSoon from "./assets/img/projects/ComingSoon.png";
+// import ComingSoon from "./assets/img/projects/ComingSoon.png";
 import TicTacToe from "./assets/img/projects/TicTacToe.png";
 import Todo from "./assets/img/projects/Todo.png";
 import DogWalk from "./assets/img/projects/dogWalking.png";
+import Cleaners from "./assets/img/projects/Cleaners.png";
 
 // skills images
 import HTML from "./assets/img/skills/html.png";
@@ -130,6 +131,14 @@ export const projectsData = [
   },
   {
     id: "4",
+    image: Cleaners,
+    href:"https://evascleaning.netlify.app/",
+    name: "Eva's Cleaning Page",
+    description:"This landing page was made for a client who has their own self-employed cleaning business",
+    category: "Landing Page",
+  },
+  {
+    id: "5",
     image: ChatApp,
     href:"https://chat-app-a9849.firebaseapp.com/",
     name: "The Chat App",
@@ -137,20 +146,12 @@ export const projectsData = [
     category: "Full-Stack Projects",
   },
   {
-    id: "5",
+    id: "6",
     image: Password,
     href:"https://fredspasswordgenerator.netlify.app/",
     name: "Password Generator",
     description:"An easy to use password generator that will quickly generate a safe and secure password for you.",
     category: "Front End Projects",
-  },
-  {
-    id: "6",
-    image: ComingSoon,
-    href:"",
-    name: "Coming Soon!",
-    description:"",
-    category: "Full-Stack Projects",
   },
 ];
 
