@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 // import contact data
 import { contact } from "../../data";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleInputChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      alert("All fields must be filled out.");
+      return;
+    }
+  };
+
   return (
     <section className="section bg-primary" id="contact">
       <div className="container mx-auto">
@@ -41,16 +69,44 @@ const Contact = () => {
             method="POST"
             action="https://getform.io/f/7676c069-e04f-4b7d-957f-93f542a8679b"
             className="space-y-8 w-full max-w-[780px]"
+            onSubmit={handleSubmit}
           >
             <div className="flex gap-8">
-              <input className="input" type="text" name="name" placeholder="Your name" />
-              <input className="input" type="email" name="email" placeholder="Your email" />
+              <input
+                className="input"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                className="input"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
             </div>
-            <input className="input" type="text" name="subject" placeholder="Subject" />
+            <input
+              className="input"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              value={formData.subject}
+              onChange={handleInputChange}
+              required
+            />
             <textarea
               className="textarea"
               name="message"
               placeholder="Your message"
+              value={formData.message}
+              onChange={handleInputChange}
+              required
             ></textarea>
             <button className="btn btn-lg bg-accent hover:bg-secondary-hover">
               Send message
