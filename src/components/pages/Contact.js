@@ -18,7 +18,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (
@@ -29,6 +29,28 @@ const Contact = () => {
     ) {
       alert("All fields must be filled out.");
       return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://getform.io/f/7676c069-e04f-4b7d-957f-93f542a8679b",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to submit the form");
+      }
+
+      alert("Form submitted successfully!");
+    } catch (error) {
+      console.error(error);
+      alert("Failed to submit the form. Please try again later.");
     }
   };
 
@@ -62,8 +84,6 @@ const Contact = () => {
             })}
           </div>
           <form
-            method="POST"
-            action="https://getform.io/f/7676c069-e04f-4b7d-957f-93f542a8679b"
             className="space-y-8 w-full max-w-[780px]"
             onSubmit={handleSubmit}
           >
