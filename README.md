@@ -23,7 +23,7 @@ Currently, I am updating the projects section of my portfolio that showcases som
 # Tools Used
 
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) -- used for the styling
 - ![React Icon](https://img.shields.io/badge/react_icon-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) -- used for the icons
 - ![getForm](https://img.shields.io/badge/getForm.io-%23ffffff.svg?style=for-the-badge&logo=prefect&logoColor=white) -- used for the contact form
 
