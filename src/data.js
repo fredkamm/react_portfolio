@@ -26,7 +26,7 @@ import Password from "./assets/img/projects/Password.png";
 import TicTacToe from "./assets/img/projects/TicTacToe.png";
 import Todo from "./assets/img/projects/Todo.png";
 import DogWalk from "./assets/img/projects/dogWalking.png";
-import Cleaners from "./assets/img/projects/Cleaners.png";
+// import Cleaners from "./assets/img/projects/Cleaners.png";
 import SVG_Gen from "./assets/img/projects/SVG_Generator.png"
 
 // skills images
