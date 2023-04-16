@@ -170,9 +170,6 @@ export const projectsNav = [
   {
     name: "Back End Projects",
   },
-  {
-    name:"Landing Page",
-  },
 ];
 
 // skills
