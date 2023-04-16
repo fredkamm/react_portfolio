@@ -27,6 +27,7 @@ import TicTacToe from "./assets/img/projects/TicTacToe.png";
 import Todo from "./assets/img/projects/Todo.png";
 import DogWalk from "./assets/img/projects/dogWalking.png";
 import Cleaners from "./assets/img/projects/Cleaners.png";
+import SVG_Gen from "./assets/img/projects/SVG_Generator.png"
 
 // skills images
 import HTML from "./assets/img/skills/html.png";
@@ -119,23 +120,23 @@ export const projectsData = [
     href:"https://thedogwalker.netlify.app/",
     name: "Dog Walking Services",
     description:"This is a landing page made for a client who has their own dog walking service. Allowing them to promote their services via the web",
-    category: "Landing Page",
+    category: "Front End Projects",
   },
   {
     id: "3",
+    image: SVG_Gen,
+    href:"https://github.com/fredkamm/SVG-Logo-Maker",
+    name: "SVG Logo Generator",
+    description:"Using shapes and colors, this app gives the users the ability to create a SVG through the terminal using node.js",
+    category: "Back end Projects",
+  },
+  {
+    id: "4",
     image: Todo,
     href:"https://fredstodoapp.netlify.app/",
     name: "Todo App",
     description:"This is a simple todo list used to keep track of things that i need to accomplish.",
     category: "Front End Projects",
-  },
-  {
-    id: "4",
-    image: Cleaners,
-    href:"https://evascleaning.netlify.app/",
-    name: "Eva's Cleaning Page",
-    description:"This landing page was made for a client who has their own self-employed cleaning business",
-    category: "Landing Page",
   },
   {
     id: "5",
@@ -165,6 +166,9 @@ export const projectsNav = [
   },
   {
     name: "Front End Projects",
+  },
+  {
+    name: "Back End Projects",
   },
   {
     name:"Landing Page",
