@@ -2,16 +2,15 @@
 import {
   FiLinkedin,
   FiGithub,
-  FiTwitch,
   FiLayout,
   FiSettings,
   FiPenTool,
-  // FiMousePointer,
   FiMail,
   FiMapPin,
 } from "react-icons/fi";
 
 import { SiUpwork } from "react-icons/si"
+// import { BsFiletypePdf } from "react-icons/bs"
 
 // companies icons
 import UpworkBrandIcon from "./assets/img/brands/upwork.png";
@@ -86,10 +85,10 @@ export const social = [
     icon: <SiUpwork />,
     href: "https://www.upwork.com/freelancers/~0118d13665becb65b5",
   },
-  {
-    icon: <FiTwitch />,
-    href: "",
-  },
+  // {
+  //   icon: <BsFiletypePdf />,
+  //   href: "",
+  // },
 ];
 
 // companies

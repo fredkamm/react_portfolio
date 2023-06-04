@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-// import img
 import Image from "../../assets/img/profilepicture.png";
 
 const About = () => {
