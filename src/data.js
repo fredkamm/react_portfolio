@@ -23,8 +23,9 @@ import Password from "./assets/img/projects/Password.png";
 // import AnimeList from "./assets/img/projects/AnimeList.png";
 // import ComingSoon from "./assets/img/projects/ComingSoon.png";
 import TicTacToe from "./assets/img/projects/TicTacToe.png";
+import Tjod from "./assets/img/projects/TJOD_Logo.webp";
 import Todo from "./assets/img/projects/Todo.png";
-import DogWalk from "./assets/img/projects/dogWalking.png";
+// import DogWalk from "./assets/img/projects/dogWalking.png";
 // import Cleaners from "./assets/img/projects/Cleaners.png";
 import SVG_Gen from "./assets/img/projects/SVG_Generator.png"
 
@@ -107,16 +108,16 @@ export const brands = [
 export const projectsData = [
   {
     id: "1",
-    image: TicTacToe,
-    href:"https://freds-tic-tac-toe.netlify.app/",
-    name: "Tic Tac Toe",
-    description:"Play a game of Tic-Tac-Toe!",
+    image: Tjod,
+    href:"https://https://tjodhomeimprovement.com/",
+    name: "TJOD Home Improvement",
+    description:"This is a website made for a client who has their own home improvement business. Allowing them to promote their services via the web",
     category: "Front End Projects",
   },
   {
     id: "2",
-    image: DogWalk,
-    href:"https://thedogwalker.netlify.app/",
+    image: TicTacToe,
+    href:"https://freds-tic-tac-toe.netlify.app/",
     name: "Dog Walking Services",
     description:"This is a landing page made for a client who has their own dog walking service. Allowing them to promote their services via the web",
     category: "Front End Projects",

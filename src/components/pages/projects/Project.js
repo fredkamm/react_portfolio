@@ -4,7 +4,7 @@ const Project = ({ item }) => {
   return (
     <div key={item.id} className="flex flex-col items-center text-center">
       <div className="mb-8">
-        <a className="text-base" href={item.href}>
+        <a className="text-base" href={item.href} target="_blank" rel="noopener noreferrer">
           <img className="rounded-2xl" src={item.image} alt="" />
         </a>
       </div>
