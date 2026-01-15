@@ -15,18 +15,21 @@ import BackTopBtn from './components/helpers/BackTopBtn';
 
 const App = () => {
   return (
-    <div className='bg-white relative'>
-      <Header />
-      <Hero />
-      <Brands />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Services />
-      <Testimonials />
-      <Contact />
-      <Footer />
-      <BackTopBtn />
+    <div className='bg-primary relative min-h-screen'>
+      <div className='fixed inset-0 bg-gradient-to-br from-primary via-secondary to-tertiary opacity-50 pointer-events-none'></div>
+      <div className='relative z-0'>
+        <Header />
+        <Hero />
+        <Brands />
+        <About />
+        <Skills />
+        <Portfolio />
+        <Services />
+        <Testimonials />
+        <Contact />
+        <Footer />
+        <BackTopBtn />
+      </div>
     </div>
   );
 };

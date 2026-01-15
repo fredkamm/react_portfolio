@@ -109,7 +109,7 @@ export const projectsData = [
   {
     id: "1",
     image: Tjod,
-    href:"https://https://tjodhomeimprovement.com/",
+    href:"https://tjodhomeimprovement.com/",
     name: "TJOD Home Improvement",
     description:"This is a website made for a client who has their own home improvement business. Allowing them to promote their services via the web",
     category: "Front End Projects",

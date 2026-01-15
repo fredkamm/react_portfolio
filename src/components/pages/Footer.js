@@ -8,24 +8,25 @@ import Logo from '../../assets/img/logo(white).png';
 
 const Footer = () => {
   return (
-    <footer className='bg-tertiary'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col p-3 lg:flex-row space-y-6 lg:space-y-3 items-center justify-around md:space-y-1'>
-          <div className='flex space-x-6 items-center justify-center'>
+    <footer className='bg-tertiary relative py-4 lg:py-5'>
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/10"></div>
+      <div className='container mx-auto relative z-10'>
+        <div className='flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-6'>
+          <div className='flex space-x-5 items-center justify-center'>
             {social.map((item, index) => {
               const { href, icon } = item;
               return (
-                <a className='text-accent text-base' href={href} key={index}>
+                <a className='text-accent text-lg hover:text-accent-light hover:scale-110 transition-all duration-300' href={href} key={index} target="_blank" rel="noopener noreferrer">
                   {icon}
                 </a>
               );
             })}
           </div>
-          <div>
-            <img className='h-[170px] lg:h-[300px]' src={Logo} alt='' />
+          <div className='flex items-center justify-center'>
+            <img className='h-24 lg:h-32' src={Logo} alt='Fred Kamm Logo' />
           </div>
-          <p className='text-paragraph opacity-80 text-[15px]'>
-            &copy; 2022 Fred Kamm. All rights reserved.
+          <p className='text-paragraph opacity-80 text-sm lg:text-[15px] text-center'>
+            &copy; 2024 Fred Kamm. All rights reserved.
           </p>
         </div>
       </div>

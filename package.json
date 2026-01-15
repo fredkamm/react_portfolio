@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,14 +36,15 @@
     ]
   },
   "devDependencies": {
-    "@heroicons/react": "^1.0.6",
-    "autoprefixer": "^10.4.2",
-    "framer-motion": "^6.2.8",
-    "postcss": "^8.4.8",
-    "react-icons": "^4.3.1",
-    "react-intersection-observer": "^8.33.1",
-    "react-scroll": "^1.8.6",
-    "swiper": "^8.0.7",
-    "tailwindcss": "^3.0.23"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@heroicons/react": "^2.1.3",
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "^11.3.19",
+    "postcss": "^8.4.47",
+    "react-icons": "^5.3.0",
+    "react-intersection-observer": "^9.13.1",
+    "react-scroll": "^1.9.0",
+    "swiper": "^11.1.14",
+    "tailwindcss": "^3.4.7"
   }
 }

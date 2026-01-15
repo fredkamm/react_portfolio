@@ -41,8 +41,8 @@ const Projects = () => {
                   handleClick(e, index);
                 }}
                 className={`${
-                  active === index ? 'active' : ''
-                } cursor-pointer capitalize m-4`}
+                  active === index ? 'active glass px-4 py-2 rounded-lg' : 'hover:text-accent'
+                } cursor-pointer capitalize m-4 transition-all duration-300`}
                 key={index}
               >
                 {item.name}
@@ -53,8 +53,8 @@ const Projects = () => {
       </nav>
       {/* projects */}
       <section className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
-        {projects.map((item) => {
-          return <Project item={item} key={item.id} />;
+        {projects.map((item, index) => {
+          return <Project item={item} index={index} key={item.id} />;
         })}
       </section>
     </div>

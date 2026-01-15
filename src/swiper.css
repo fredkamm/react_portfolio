@@ -1,7 +1,17 @@
 .swiper-pagination {
-  margin-top: 20rem;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .swiper-pagination-bullet {
   background-color: #4d95a8;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #4d95a8;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(77, 149, 168, 0.5);
 }

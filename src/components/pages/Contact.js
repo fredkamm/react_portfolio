@@ -55,8 +55,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="section bg-primary" id="contact">
-      <div className="container mx-auto">
+    <section className="section bg-primary relative" id="contact">
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/10"></div>
+      <div className="container mx-auto relative z-10">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
             Contact me
@@ -68,23 +69,25 @@ const Contact = () => {
               const { icon, title, subtitle, description } = item;
               return (
                 <div
-                  className="flex flex-col lg:flex-row gap-x-4 sm:flex-row"
+                  className="glass-card p-6 w-full glass-card-hover"
                   key={index}
                 >
-                  <div className="text-accent rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
-                    {icon}
-                  </div>
-                  <div>
-                    <h4 className="font-body text-xl mb-1">{title}</h4>
-                    <p className="mb-1 text-paragraph">{subtitle}</p>
-                    <p className="text-accent font-normal ">{description}</p>
+                  <div className="flex flex-col lg:flex-row gap-x-4 items-start">
+                    <div className="text-accent rounded-lg w-14 h-14 flex items-center justify-center flex-shrink-0 mb-4 lg:mb-0 text-2xl glass bg-accent/10">
+                      {icon}
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-body text-xl mb-1 font-semibold">{title}</h4>
+                      <p className="mb-1 text-paragraph">{subtitle}</p>
+                      <p className="text-accent font-normal">{description}</p>
+                    </div>
                   </div>
                 </div>
               );
             })}
           </div>
           <form
-            className="space-y-8 w-full max-w-[780px]"
+            className="space-y-8 w-full max-w-[780px] glass-card p-8"
             onSubmit={handleSubmit}
           >
             <div className="flex gap-8">
@@ -124,7 +127,7 @@ const Contact = () => {
               onChange={handleInputChange}
               required
             ></textarea>
-            <button className="btn btn-lg bg-accent hover:bg-secondary-hover">
+            <button className="btn btn-lg bg-accent hover:bg-accent-hover glow-effect hover:scale-105 transition-all">
               Send message
             </button>
           </form>

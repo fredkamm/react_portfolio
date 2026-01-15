@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import '../../swiper.css';
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 
 const TestiSlider = () => {
@@ -34,23 +34,18 @@ const TestiSlider = () => {
           const { authorImg, authorText, authorName, authorPosition } = item;
           return (
             <SwiperSlide key={index}>
-              <div
-                className='flex flex-col lg:flex-row gap-12 lg:gap-32'
-              >
-                <div
-                  className='w-48 h-48 lg:w-[328px] lg:h-[328px]'
-                >
-                  <img className='rounded-2xl' src={authorImg} alt='' />
+              <div className='flex flex-col lg:flex-row gap-6 lg:gap-8 items-center'>
+                <div className='w-32 h-32 lg:w-40 lg:h-40 relative group flex-shrink-0'>
+                  <div className='absolute -inset-1 bg-gradient-to-r from-accent to-accent-light rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300'></div>
+                  <img className='rounded-2xl relative glass-card w-full h-full object-cover' src={authorImg} alt={`${authorName} testimonial`} />
                 </div>
-                <div
-                  className='flex flex-col max-w-3xl'
-                >
-                  <h5 className='font-body text-2xl mb-8 italic font-normal'>
+                <div className='glass-card p-6 flex flex-col max-w-2xl'>
+                  <h5 className='font-body text-lg lg:text-xl mb-4 italic font-normal leading-relaxed'>
                     " {authorText} "
                   </h5>
-                  <div>
-                    <p className='text-lg text-accent'>{authorName}</p>
-                    <p>{authorPosition}</p>
+                  <div className='border-t border-white/10 pt-3'>
+                    <p className='text-base lg:text-lg text-accent font-semibold'>{authorName}</p>
+                    <p className='text-sm lg:text-base text-paragraph'>{authorPosition}</p>
                   </div>
                 </div>
               </div>

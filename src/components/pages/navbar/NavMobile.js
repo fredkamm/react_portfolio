@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 // import icons
-import { XIcon } from '@heroicons/react/outline';
-import { MenuAlt3Icon } from '@heroicons/react/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 
 // import navigation data
 import { navigation } from '../../../data';
@@ -47,9 +47,9 @@ const NavMobile = () => {
     <nav className='relative'>
       <div
         onClick={() => setIsOpen(true)}
-        className='cursor-pointer text-white'
+        className='cursor-pointer text-white hover:text-accent transition-colors'
       >
-        <MenuAlt3Icon className='w-8 h-8' />
+        <Bars3Icon className='w-8 h-8' />
       </div>
 
       {/* circle */}
@@ -57,7 +57,7 @@ const NavMobile = () => {
         variants={circleVariants}
         initial='hidden'
         animate={isOpen ? 'visible' : 'hidden'}
-        className='w-4 h-4 rounded-full bg-accent fixed top-0 right-0'
+        className='w-4 h-4 rounded-full bg-accent fixed top-0 right-0 z-40'
       ></motion.div>
 
       <motion.ul
@@ -66,13 +66,13 @@ const NavMobile = () => {
         animate={isOpen ? 'visible' : ''}
         className={`${
           isOpen ? 'right-0' : '-right-full'
-        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
+        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden z-50`}
       >
         <div
           onClick={() => setIsOpen(false)}
-          className='cursor-pointer absolute top-8 right-8'
+          className='cursor-pointer absolute top-8 right-8 hover:text-accent transition-colors'
         >
-          <XIcon className='w-8 h-8' />
+          <XMarkIcon className='w-8 h-8' />
         </div>
         {navigation.map((item, idx) => {
           return (

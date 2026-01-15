@@ -19,13 +19,16 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? 'bg-tertiary h-20' : 'h-24'
-      } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
+        bg ? 'h-20' : 'h-24'
+      } flex items-center fixed top-0 w-full text-white z-50 transition-all duration-300`}
     >
-      <div className='container mx-auto h-full flex items-center justify-between'>
+      <div className={`absolute inset-0 ${
+        bg ? 'bg-primary/95 backdrop-blur-xl' : 'bg-primary/80 backdrop-blur-md'
+      } border-b border-white/5 transition-all duration-300`}></div>
+      <div className='container mx-auto h-full flex items-center justify-between relative z-10'>
         {/* logo */}
-        <a href=''>
-          <img className='h-[250px]' src={Logo} alt='' />
+        <a href='#home' className='hover:opacity-80 transition-opacity duration-300'>
+          <img className='h-[200px] lg:h-[250px]' src={Logo} alt='Fred Kamm Logo' />
         </a>
         {/* nav */}
         <div className='hidden lg:block'>

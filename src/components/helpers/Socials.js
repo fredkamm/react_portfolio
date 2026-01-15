@@ -15,7 +15,7 @@ const Socials = () => {
               className="flex justify-center items-center text-accent"
               key={index}
             >
-              <a className="text-base" href={item.href}>
+              <a className="text-base hover:text-accent-light hover:scale-110 transition-all duration-300" href={item.href} target="_blank" rel="noopener noreferrer">
                 {item.icon}
               </a>
             </li>
@@ -23,7 +23,7 @@ const Socials = () => {
         })}
       </ul>
       <a
-        className="text-base text-accent"
+        className="text-base text-accent hover:text-accent-light hover:scale-110 transition-all duration-300"
         href={resumePDF}
         download="resume.pdf"
       >

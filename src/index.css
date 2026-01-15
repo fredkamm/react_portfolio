@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    @apply font-body text-paragraph leading-6 bg-gray-200;
+    @apply font-body text-paragraph leading-6 bg-primary;
   }
   h1,
   h2,
@@ -24,7 +27,7 @@
     @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];
   }
   .btn {
-    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
+    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-lg hover:bg-accent-hover transition-all relative overflow-hidden;
   }
   .btn-lg {
     @apply h-[54px];
@@ -33,12 +36,42 @@
     @apply h-[48px];
   }
   .input {
-    @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
+    @apply bg-secondary/50 backdrop-blur-md text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-lg border border-white/10 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all;
   }
   .textarea {
-    @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
+    @apply bg-secondary/50 backdrop-blur-md resize-none w-full outline-none p-6 rounded-lg h-[200px] border border-white/10 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all;
   }
   .active {
     @apply text-accent;
+  }
+  .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #4d95a8;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .glass-strong {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+  }
+  .glass-card-hover {
+    @apply hover:bg-white/10 hover:border-white/20 hover:shadow-2xl transition-all duration-300;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent;
+  }
+  .glow-effect {
+    @apply shadow-lg shadow-accent/20;
   }
 }
